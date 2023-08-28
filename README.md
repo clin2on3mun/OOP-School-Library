@@ -49,6 +49,7 @@ Build A school library in RUBY using OOP
 - **Create Person Class, Teacher and Student as Subclasses from Person**
 - **Add method in both classes**
 - **Used inheritance and polymorphism**
+- **Used Decorator class and Nameable to add some functionalities to person name attribute**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
