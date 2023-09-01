@@ -61,13 +61,13 @@ class App
   end
 
   # create book
-  #The bug was introduced on this method create_book
+  # The bug was introduced on this method create_book
   def create_a_book
     print 'Title: '
     book_title = gets.chomp
     print 'Author: '
     book_author = gets.chomp
-    @book << Book.new(book_title, book_author)
+    @books << Book.new(book_author, book_title)
     puts 'Book added successfully'
     $stdout.flush
   end
