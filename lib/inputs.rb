@@ -1,9 +1,9 @@
 class Inputs
   def number_inputs
-    get.chomp.to_i
+    gets.chomp.to_i
   end
 
   def string_inputs
-    get.chomp
+    gets.chomp
   end
 end
