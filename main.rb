@@ -1,4 +1,4 @@
-require_relative 'app'
+require_relative 'lib/app'
 
 def render_choices
   puts 'Please Choose an Option by entering a number:'
@@ -10,6 +10,7 @@ def render_choices
   puts '6. List all rentals for a given person id.'
   puts '7. EXIT'
 end
+
 def choose_number(choice, app)
   case choice
   when 1 then app.list__all_books
@@ -20,6 +21,7 @@ def choose_number(choice, app)
   when 6 then app.list_of_rentals
   end
 end
+
 def main
   app = App.new
   loop do
