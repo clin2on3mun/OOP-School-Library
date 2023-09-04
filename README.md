@@ -1,6 +1,6 @@
 # OOP-School-Library
 Build A school library in RUBY using OOP
-<a name="readme-top"> Vet Clinic</a>
+<a name="readme-top"> OOP-School-Library</a>
 
 # 📗 Table of Contents
 
@@ -117,6 +117,11 @@ follow all the previous steps
 - GitHub: [@githubhandle](https://github.com/clin2on3mun)
 - Twitter: [@twitterhandle](https://twitter.com/ClintonMunana)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/munana-clinton/)
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/olanikegloria)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olani/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
