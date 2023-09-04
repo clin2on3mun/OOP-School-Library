@@ -92,7 +92,7 @@ class App
     person_index = @input.number_inputs
     select_person = @persons[person_index]
     print 'Enter Rental Date (yyyy-mm-dd)'
-    date = gets.chomp
+    date = @input.string_inputs
     @rentals.push(Rental.new(date, select_book, select_person))
     @smessage.successful('Rental')
     $stdout.flush
