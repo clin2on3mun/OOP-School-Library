@@ -36,17 +36,13 @@ class App
 
   # create person
   def create_a_person
-    print 'Do you want to add a student (1) or a teacher (2)? [Insert the number]: '
-    is_student = gets.chomp.strip.to_i
-    print 'Age: '
-    age = @input.number_inputs
-    print 'Name: '
-    person_name = @input.string_inputs
+    is_student = @input.input_person_status
+    age = @input.input_age
+    person_name = @input.input_name
     case is_student
 
     when 1
-      puts 'Has Parent Permission [Y/N]'
-      permission = gets.chomp.downcase == 'y'
+      permission = @input.parent_permission
       create_student(age, person_name, permission)
     when 2
       create_teacher(age, person_name)
@@ -60,18 +56,13 @@ class App
   end
 
   def create_teacher(age, person)
-    puts 'Specialization'
-    specialization = gets.chomp
     @persons << Teacher.new(age, specialization, person)
   end
 
   # create book
-  # The bug was introduced on this method create_book
   def create_a_book
-    print 'Title: '
-    book_title = @input.string_inputs
-    print 'Author: '
-    book_author = @input.string_inputs
+    book_title = @input.input_book_title
+    book_author = @input.input_book_author
     @books << Book.new(book_author, book_title)
     @message.successful('Book')
     $stdout.flush
@@ -79,20 +70,14 @@ class App
 
   # create rental
   def create_a_rental
-    puts 'Select a book from the following list by number'
-    @books.each_with_index do |book, index|
-      puts "#{index}) Title: #{book.title}, Author: #{book.author}"
-    end
-    book_index = @input.number_inputs
+    @message.rental_error(@books) if @books.empty? || persons.empty?
+
+    book_index = @input.find_book_by_idx(@books)
     select_book = @books[book_index]
-    print 'Select a person from the following list by number (not ID)'
-    @persons.each_with_index do |person, index|
-      puts "#{index}) Name: #{person.name} ID: #{person.id} Age: #{person.age}"
-    end
-    person_index = @input.number_inputs
+    person_index = @input.find_person_by_idx(@persons)
     select_person = @persons[person_index]
-    print 'Enter Rental Date (yyyy-mm-dd)'
-    date = @input.string_inputs
+
+    date = @input.input_date
     @rentals.push(Rental.new(date, select_book, select_person))
     @smessage.successful('Rental')
     $stdout.flush
@@ -100,8 +85,8 @@ class App
 
   # list_all_rentals
   def list_of_rentals
-    print 'ID of person'
-    input_person_id = @input.number_inputs
+    @message.rental_error(@books) if @rentals.empty?
+    input_person_id = @input.show_rental(@rentals)
     puts 'Rentals'
     @rentals.each do |rental|
       puts "Date: #{rental.date}, Book: #{rental.book.title}" if rental.person.id == input_person_id
