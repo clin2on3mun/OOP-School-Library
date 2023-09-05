@@ -14,7 +14,7 @@ class Inputs
     gets.chomp
   end
 
-  def inputs_specialization
+  def input_specialization
     puts 'Specialization'
     gets.chomp
   end
@@ -30,7 +30,7 @@ class Inputs
   end
 
   def parent_permission
-    print 'Has Parent Permission [Y/N]'
+    print 'Has Parent Permission [Y/N]: '
     permission = gets.chomp
     if permission.downcase == 'y'
       true
