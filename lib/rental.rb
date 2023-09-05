@@ -4,12 +4,17 @@ class Rental
   def initialize(date, book, person)
     @date = date
     @book = book
-    book[:rental] || []
+    # Initialize book rentals array if it's nil
+    book[:rental] ||= []
     book[:rental] << self
+
     @person = person
-    person[:rental] || []
+
+    # Initialize person rentals array if it's nil
+    person[:rental] ||= []
     person[:rental] << self
   end
+
   def to_hash
     {
       date: @date,
