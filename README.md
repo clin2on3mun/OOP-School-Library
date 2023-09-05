@@ -51,7 +51,8 @@ Build A school library in RUBY using OOP
 - **Used inheritance and polymorphism**
 - **Used Decorator class and Nameable to add some functionalities to person name attribute**
 - **Add relationships or association to  classroom and student classes and rental, book and person classes**
--**Add Basic User interface to interact with by adding books and people and renting books from the library**
+- **Add Basic User interface to interact with by adding books and people and renting books from the library**
+- **preserve data in json files**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
