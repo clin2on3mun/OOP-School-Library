@@ -5,7 +5,7 @@ class PreserveData
       id: person.id,
       age: person.age,
       name: person.name,
-      parent_permission: person.parent_permission[:parent_permission]
+      parent_permission: person.parent_permission
     }
   end
 

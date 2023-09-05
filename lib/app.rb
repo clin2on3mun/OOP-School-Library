@@ -22,11 +22,13 @@ class App
   # list all books
   def list__all_books
     @message.info_messages('books') if @books.empty?
-    @books.each { |book| puts "title : #{book.title} by author : #{book.author}" }
+    @books = read_from_file('books.json')
+    @books.each { |book| puts "title : #{book[:title]} by author : #{book[:author]}" }
   end
 
   def list_all_persons
     @message.info_messages('People') if @persons.empty?
+    @persons = read_from_file('people.json')
     @persons.each do |person|
       if person[:person_type] == 2
         puts "[Teacher] Age: #{person[:age]} Name: #{person[:name]}, ID: #{person[:id]}"
@@ -57,11 +59,11 @@ class App
   end
 
   def check_person
-    res = read_from_file('../people.json')
+    res = read_from_file('people.json')
     if !res.nil? && res.class != Array
       @persons.push(res)
     elsif !res.nil? && res.instance_of?(Array)
-      @person = res
+      @persons = res
     end
   end
 
