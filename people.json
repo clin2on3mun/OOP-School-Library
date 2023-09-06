@@ -1,0 +1,23 @@
+[
+  {
+    "person_type": 1,
+    "id": 789,
+    "age": 12,
+    "name": "Munana",
+    "parent_permission": true
+  },
+  {
+    "person_type": 2,
+    "id": 258,
+    "age": 32,
+    "name": "Jack Nelson",
+    "specialization": "Finance"
+  },
+  {
+    "person_type": 1,
+    "id": 291,
+    "age": 23,
+    "name": "Denver",
+    "parent_permission": true
+  }
+]
