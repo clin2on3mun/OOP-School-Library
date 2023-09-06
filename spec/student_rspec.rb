@@ -3,6 +3,7 @@ require_relative '../lib/student'
 describe Student do
   context 'Test for student object' do
     let(:student) { Student.new(25, 'olla', parent_permission: true) }
+    let(:classroom) { Classroom.new('Math') }
     it 'should return the student name olla' do
       expect(student.name).to eq('olla')
     end
@@ -14,6 +15,10 @@ describe Student do
     end
     it 'should return the play_hooky' do
       expect(student.play_hooky).to eq('¯(ツ)/¯')
+    end
+    it 'adds the student to the classroom' do
+      student.classroom = classroom
+      expect(classroom.students).to include(student)
     end
   end
 end

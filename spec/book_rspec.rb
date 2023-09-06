@@ -16,5 +16,8 @@ describe Book do
     it 'should return the Rental book' do
       expect(book.add_rental(person, date)).to be_a(Rental)
     end
+    it 'should return the Rental book' do
+      expect(book.to_hash).to be_a(Hash)
+    end
   end
 end
