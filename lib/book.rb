@@ -15,7 +15,7 @@ class Book
 
   def to_hash
     {
-      id: @id[0],
+      id: @id,
       title: @title,
       author: @author
     }

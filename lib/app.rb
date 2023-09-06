@@ -76,7 +76,7 @@ class App
       person_data = create_teacher
     end
     check_person
-    @persons.push(person_data)
+    @persons = @persons.push(person_data)
     write_to_file('people.json', @persons)
     @message.successful('Person')
     $stdout.flush
