@@ -6,13 +6,13 @@ class Rental
     @book = book
     # Initialize book rentals array if it's nil
     @book_rental = []
-    @book_rental<<self
+    @book_rental << self
 
     @person = person
 
     # Initialize person rentals array if it's nil
     @person_rental = []
-    @person_rental<<self
+    @person_rental << self
   end
 
   def to_hash
