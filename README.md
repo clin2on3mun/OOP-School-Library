@@ -26,10 +26,10 @@ Build A school library in RUBY using OOP
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 [OOP SCHOOL LIBRARY] <a name="about-project"></a>
 
 
-**[Vet Clinic]** is a Database project using postgres to create tables that store animals data
+**[OOP SCHOOL LIBRARY]** - This project employs Object-Oriented Programming (OOP) principles to create an intuitive console application for managing a library system using Ruby. It facilitates librarians in performing various tasks, including adding new students and teachers, adding new books to the library, and maintaining records of book borrowings, along with corresponding borrowing dates. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
