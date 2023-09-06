@@ -5,14 +5,14 @@ class Rental
     @date = date
     @book = book
     # Initialize book rentals array if it's nil
-    book[:rental] ||= []
-    book[:rental] << self
+    @book_rental = []
+    @book_rental<<self
 
     @person = person
 
     # Initialize person rentals array if it's nil
-    person[:rental] ||= []
-    person[:rental] << self
+    @person_rental = []
+    @person_rental<<self
   end
 
   def to_hash
