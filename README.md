@@ -53,7 +53,7 @@ Build A school library in RUBY using OOP
 - **Add relationships or association to  classroom and student classes and rental, book and person classes**
 - **Add Basic User interface to interact with by adding books and people and renting books from the library**
 - **preserve data in json files**
-
+- **use unit test to run some test using RSPEC**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -98,6 +98,11 @@ Install this project with:
 ```
 it will install the required gemfile for running the project
 
+### RSpec Tests
+
+```
+ rspec spec
+```
 ### Usage
 
 To run the project, execute the following command:
@@ -132,7 +137,6 @@ follow all the previous steps
 
 
 - [ ] **Add new Methods**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
