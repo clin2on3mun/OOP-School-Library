@@ -26,10 +26,10 @@ Build A school library in RUBY using OOP
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 [OOP SCHOOL LIBRARY] <a name="about-project"></a>
 
 
-**[Vet Clinic]** is a Database project using postgres to create tables that store animals data
+**[OOP SCHOOL LIBRARY]** - This project employs Object-Oriented Programming (OOP) principles to create an intuitive console application for managing a library system using Ruby. It facilitates librarians in performing various tasks, including adding new students and teachers, adding new books to the library, and maintaining records of book borrowings, along with corresponding borrowing dates. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,7 +53,7 @@ Build A school library in RUBY using OOP
 - **Add relationships or association to  classroom and student classes and rental, book and person classes**
 - **Add Basic User interface to interact with by adding books and people and renting books from the library**
 - **preserve data in json files**
-
+- **use unit test to run some test using RSPEC**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -98,6 +98,11 @@ Install this project with:
 ```
 it will install the required gemfile for running the project
 
+### RSpec Tests
+
+```
+ rspec spec
+```
 ### Usage
 
 To run the project, execute the following command:
@@ -132,7 +137,6 @@ follow all the previous steps
 
 
 - [ ] **Add new Methods**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
